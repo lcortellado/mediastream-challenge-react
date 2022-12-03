@@ -1,27 +1,66 @@
+.movie-library__list {
+ background-color: #222222;
+ border-radius: 8px;
+ padding: 1.5em;
+ display: grid;
+ grid-auto-rows: 22rem;
+ gap: 2rem;
+ /* Creating a grid with columns that are at least 15rem wide, but will expand to
+ fill the available space. */
+ grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+}
+
 .movie-library {
   background-color: var(--black);
   color: var(--white);
   min-height: 100vh;
-  padding: 2em;
+  padding:0;
+  margin: 0;
+  background-image: url('./mountains.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
 }
 
 .movie-library__title {
   font-size: 2em;
+  font-weight: bold;
   margin-bottom: 1em;
+  padding: 30px 30px 0px 30px;
 }
 
 .movie-library__actions {
   display: flex;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  height: 30px;
+  padding: 0px 30px 0px 30px;
 }
 
 .movie-library__actions select {
   width: 100%;
   padding: .25em;
+  border-bottom: 1px solid #74d702;
+  border-top: 1px solid #74d702;
+  border-left: 1px solid #74d702;
+  border-right: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 .movie-library__actions button {
   white-space: nowrap;
+  color: black;
+  background: green;
+  background-color: #98d702;
+  border-bottom: 1px solid #74d702;
+  border-top: 1px solid #74d702;
+  border-right: 1px solid #74d702;
+  border-left: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  width: 150px;
 }
 
 .movie-library__loading {
@@ -32,26 +71,8 @@
   margin: 2em 0;
 }
 
-.movie-library__list {
-  padding: 1em;
-  background-color: #222222;
-}
 
-.movie-library__card {
-  background-color: #333333;
-  margin-bottom: 1em;
-  display: flex;
-  align-items: center;
-}
 
-.movie-library__card img {
-  width: 10em;
-}
 
-.movie-library__card ul {
-  padding: 1em;
-}
 
-.movie-library__card li {
-  line-height: 120%;
-}
+

@@ -59,14 +59,23 @@ function handleAddToCart(item){
  });
 },[carts])
 
-let discount = 0
-  const getTotal = () => {
+   const getTotal = () => {
   const total =  carts.reduce((sum, i) =>  sum + i.quantity * i.price, 0 );
-  if (porcentDiscount > 0) { 
-     discount = total * porcentDiscount
+  if (porcentDiscount) { 
+     const discount = total * porcentDiscount
      return total - discount
     }
   return total 
+  }
+
+    const getDiscount = () => {
+    const total = carts.reduce((sum, i) => sum + i.quantity * i.price, 0);
+    let discount = 0
+    if (porcentDiscount > 0) { 
+      discount = total * porcentDiscount
+      return discount
+    }
+    return discount 
   }
 
   return {
@@ -75,6 +84,6 @@ let discount = 0
     handleAddQuantity,
     carts,
     getTotal,
-    discount
+    getDiscount
   }
 }

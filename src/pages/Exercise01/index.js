@@ -19,7 +19,7 @@ import './assets/styles.css'
 
 export default function Exercise01 () {
   
-  const {handleAddToCart, handleRemoveItemToCart, handleAddQuantity, carts, getTotal, discount} = useCart()
+  const {handleAddToCart, handleRemoveItemToCart, handleAddQuantity, carts, getTotal, getDiscount} = useCart()
 
   return (
     <section className="exercise01">
@@ -47,7 +47,7 @@ export default function Exercise01 () {
         </ul>
         <div className="movies__cart-total">
           <p>Total: ${getTotal()}</p>
-            {discount !== 0 && <h4 className='discount-info'>Discount: ${discount}</h4>}
+             <h4 className='discount-info'>Discount: {getDiscount()}</h4>
         </div>
       </div>
     </section>
