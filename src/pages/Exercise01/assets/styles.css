@@ -19,13 +19,6 @@
   margin-right: 2em;
 }
 
-.movies__list-card {
-  background-color: #333333;
-  margin-bottom: 1rem;
-  padding: .75em;
-  border-radius: .2em;
-}
-
 .movies__list-card:last-child {
   margin-bottom: 0;
 }
@@ -45,19 +38,6 @@
   padding: .25em .5em;
 }
 
-.movies__cart {
-  background-color: #222222;
-  padding: 1em;
-  border-radius: .2em;
-}
-
-.movies__cart-card {
-  background-color: #333333;
-  margin-bottom: 1rem;
-  padding: .75em;
-  border-radius: .2em;
-}
-
 .movies__cart-card:last-child {
   margin-bottom: 0;
 }
@@ -65,12 +45,6 @@
 .movies__cart-card ul li {
   font-size: 1em;
   line-height: 120%;
-}
-
-.movies__cart-card-quantity {
-  display: flex;
-  align-items: center;
-  margin-top: .5em;
 }
 
 .movies__cart-card span {
@@ -89,4 +63,8 @@
 .movies__cart-total {
   margin-top: 1em;
   font-size: 1.25em;
+}
+
+.discount-info {
+  font-size: 12px;
 }

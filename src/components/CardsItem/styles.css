@@ -1,0 +1,12 @@
+.movies__cart-card {
+  background-color: #333333;
+  margin-bottom: 1rem;
+  padding: .75em;
+  border-radius: .2em;
+}
+
+.movies__cart-card-quantity {
+  display: flex;
+  align-items: center;
+  margin-top: .5em;
+}
